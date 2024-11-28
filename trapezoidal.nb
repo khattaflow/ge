@@ -1,0 +1,104 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2802,         95]
+NotebookOptionsPosition[      2414,         77]
+NotebookOutlinePosition[      2757,         92]
+CellTagsIndexPosition[      2714,         89]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"a", " ", "=", " ", 
+  RowBox[{
+  "Input", "[", "\"\<Enter the left hand point of the interval: \>\"", 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"b", " ", "=", " ", 
+  RowBox[{
+  "Input", "[", "\"\<Enter the right hand point of the interval: \>\"", 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"h", "  ", "=", " ", 
+   RowBox[{"b", "-", "a"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "x_", "]"}], " ", ":=", " ", 
+   RowBox[{"1", "/", "x"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tz", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"h", "/", "2"}], ")"}], " ", "*", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"f", "[", "x", "]"}], "/.", 
+        RowBox[{"x", " ", "\[Rule]", " ", "a"}]}], ")"}], " ", "+", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"f", "[", "x", "]"}], "/.", " ", 
+        RowBox[{"x", "\[Rule]", " ", "b"}]}], " ", ")"}]}], ")"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<Trapezoidal Estimate is: \>\"", ",", "tz"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.9374509192176714`*^9, 3.9374511563068852`*^9}, {
+  3.9374515821564274`*^9, 3.9374515823748283`*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{{3.9374511335932455`*^9, 3.93745115917729*^9}, 
+   3.9374515848864326`*^9}],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{{3.9374511335932455`*^9, 3.93745115917729*^9}, 
+   3.937451585338833*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trapezoidal Estimate is: \"\>", "\[InvisibleSpace]", 
+   FractionBox["3", "4"]}],
+  SequenceForm["Trapezoidal Estimate is: ", 
+   Rational[3, 4]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.937451160581292*^9, 3.937451585354433*^9}]
+}, Open  ]]
+},
+WindowSize->{1350, 633},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Microsoft Windows (32-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 1277, 35, 132, "Input"],
+Cell[1859, 59, 123, 2, 31, "Output"],
+Cell[1985, 63, 121, 2, 31, "Output"],
+Cell[2109, 67, 289, 7, 40, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
